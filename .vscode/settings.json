@@ -1,0 +1,28 @@
+{
+  "workbench.colorCustomizations": {
+    // https://coolors.co/
+    "activityBar.foreground": "#ffffff",
+    "activityBarBadge.background": "#ffffff",
+    "tab.activeBorder": "#ffffff",
+    "tab.activeForeground": "#ffffff",
+    "tab.unfocusedActiveForeground": "#eeeeee",
+    "tab.inactiveForeground": "#bbbbbb",
+    "tab.unfocusedInactiveForeground": "#bbbbbb",
+    "activityBar.background": "#EF476F",
+    "activityBarBadge.foreground": "#EF476F",
+    "tab.activeBackground": "#EF476F",
+    "tab.unfocusedActiveBackground": "#EB1E4E",
+    "tab.inactiveBackground": "#BC1038",
+    "tab.unfocusedInactiveBackground": "#BC1038",
+    "badge.background": "#ffffff"
+  },
+  // https://github.com/vscode-icons/vscode-icons/wiki/ListOfFiles
+  "vsicons.presets.jsOfficial": true,
+  "vsicons.associations.files": [
+    {
+      "icon": "text",
+      "extensions": ["md", "mdown", "markdown"]
+    }
+  ],
+  "ruby.rubocop.executePath": "/Users/richardtodd/.gem/ruby/2.7.1/bin/"
+}
