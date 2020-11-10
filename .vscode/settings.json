@@ -22,6 +22,10 @@
     {
       "icon": "text",
       "extensions": ["md", "mdown", "markdown"]
+    },
+    {
+      "icon": "erb",
+      "extensions": ["html.erb"]
     }
   ],
   "ruby.rubocop.executePath": "/Users/richardtodd/.gem/ruby/2.7.1/bin/"

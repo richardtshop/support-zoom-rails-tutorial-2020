@@ -12,7 +12,7 @@ gem 'mysql2', '>= 0.4.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'od
+gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -28,10 +28,6 @@ gem 'sewing_kit', '>= 0.127.0'
 gem 'quilt_rails', '>= 3.4.0'
 gem 'sorbet-runtime'
 gem 'graphql'
-# Added gems
-gem 'sass-rails', '6.0.0'
-gem 'webpacker',  '4.2.2'
-gem 'turbolinks', '5.2.1'
 
 source 'https://packages.shopify.io/shopify/gems' do
   gem 'monorail'
@@ -55,7 +51,6 @@ group :development, :test do
   gem 'rubocop-sorbet', require: false
   gem 'sorbet', require: false
   gem 'tapioca', require: false
-  gem 'sqlite3', '1.4.2'
 end
 
 group :development do
@@ -75,17 +70,4 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-  gem 'rails-controller-testing', '1.0.4'
-  gem 'minitest-reporters',       '1.3.8'
-  gem 'guard',                    '2.16.2'
-  gem 'guard-minitest',           '2.4.6'
 end
-
-# group :production do
-#   gem 'pg', '1.2.3'
-# end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-# Uncomment the following line if you're running Rails
-# on a native Windows system:
-# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
