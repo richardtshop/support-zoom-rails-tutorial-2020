@@ -1,24 +1,14 @@
 # typed: false
 # frozen_string_literal: true
 class User
-  attr_accessor :first_name, :last_name, :email
+  attr_accessor :name, :email
 
   def initialize(attributes = {})
-    @first_name = attributes[:first_name]
-    @last_name = attributes[:last_name]
-
+    @name = attributes[:first_name]
     @email = attributes[:email]
   end
 
   def formatted_email
-    "#{full_name} <#{@email}>"
-  end
-
-  def full_name
-    "#{@first_name} #{@last_name}"
-  end
-
-  def alphabetical_name
-    "#{@last_name}, #{@first_name}"
+    "#{name} <#{@email}>"
   end
 end
