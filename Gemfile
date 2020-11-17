@@ -29,6 +29,11 @@ gem 'quilt_rails', '>= 3.4.0'
 gem 'sorbet-runtime'
 gem 'graphql'
 
+# Use Bootstrap for style
+gem 'bootstrap-sass'
+# Brings back assigns and assert_template to your controller tests
+gem 'rails-controller-testing'
+
 source 'https://packages.shopify.io/shopify/gems' do
   gem 'monorail'
   gem 'kafka-shopify'
