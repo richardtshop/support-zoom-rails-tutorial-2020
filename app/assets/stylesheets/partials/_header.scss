@@ -1,0 +1,27 @@
+/* header */
+
+[id='logo'] {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+#nav__post-button {
+  padding: 7px;
+  color: #ffffff;
+}
