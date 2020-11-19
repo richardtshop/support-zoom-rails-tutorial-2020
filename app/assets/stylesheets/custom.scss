@@ -2,9 +2,13 @@
 @import 'bootstrap';
 /* Partials */
 @import 'partials/variables';
+@import 'partials/mixins';
 @import 'partials/typography';
 @import 'partials/header';
 @import 'partials/footer';
+@import 'partials/debug';
+@import 'partials/sidebar';
+@import 'partials/forms';
 
 /* universal */
 body {
