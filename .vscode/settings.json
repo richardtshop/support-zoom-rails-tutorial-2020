@@ -28,5 +28,6 @@
       "extensions": ["html.erb"]
     }
   ],
-  "ruby.rubocop.executePath": "/Users/richardtodd/.gem/ruby/2.7.1/bin/"
+  "ruby.rubocop.executePath": "/Users/richardtodd/.gem/ruby/2.7.1/bin/",
+  "ruby.rubocop.onSave": false
 }
