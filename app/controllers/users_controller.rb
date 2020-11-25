@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    @user = User.new # creating an instance variable for the new view form to use the Type
   end
 
   def create
