@@ -15,7 +15,9 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user # Same as redirect_to user_url(@user)
     else
-      render 'new' # renders new, but @user will be this object that failed to save so we can see errors.
+      render 'new'
+      # renders new, but @user will be this object that failed to save so we can see errors.
+      # as render just will load the appropriate view without a new http request unlike redirect
     end
   end
 
