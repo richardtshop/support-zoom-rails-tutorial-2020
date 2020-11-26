@@ -5,10 +5,13 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 800px) {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -31,7 +34,7 @@ footer {
     padding-left: 0;
     position: relative;
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 800px) {
       flex-direction: column;
       align-items: center;
       margin-bottom: 10px;

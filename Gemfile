@@ -31,6 +31,8 @@ gem 'graphql'
 
 # Use Bootstrap for style
 gem 'bootstrap-sass'
+# Use jquery with bootstrap
+gem 'jquery-rails'
 # Brings back assigns and assert_template to your controller tests
 gem 'rails-controller-testing'
 
