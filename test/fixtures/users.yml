@@ -2,10 +2,7 @@
 
 # These don't get run through validations in models, but rules in migrations are enforced (like email index uniuqueness)
 
-# one:
-#   name: MyString
-#   email: MyString
-
-# two:
-#   name: MyString
-#   email: MyString
+richard:
+  name: Richard Example
+  email: richard@example.com
+  password_digest: <%= User.digest('password') %>
