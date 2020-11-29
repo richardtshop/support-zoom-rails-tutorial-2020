@@ -1,4 +1,4 @@
-# typed: false
+
 # frozen_string_literal: true
 
 graphql_path = Rails.root.join("app/graphql").to_s

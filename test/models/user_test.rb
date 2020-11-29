@@ -1,4 +1,4 @@
-# typed: false
+
 # frozen_string_literal: true
 require 'test_helper'
 
@@ -65,7 +65,7 @@ class UserTest < ActiveSupport::TestCase
     upper_case_email = "TEST@SHOPIFY.COM"
     @user.email = upper_case_email
     @user.save
-    assert_equal upper_case_email.downcase, @user.reload.email
+    assert_equal(upper_case_email.downcase, @user.reload.email)
   end
 
   test "password should be present (nonblank)" do
