@@ -71,6 +71,8 @@ GEM
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     browserslist_useragent (0.2.0)
       semantic
       user_agent_parser
@@ -100,6 +102,8 @@ GEM
       simpleidn (~> 0.1)
     erubi (1.9.0)
     execjs (2.7.0)
+    faker (2.11.0)
+      i18n (>= 1.6, < 2)
     faraday (1.1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
@@ -379,6 +383,7 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.3.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.4.0)
@@ -390,8 +395,10 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   bootstrap-sass
+  bootstrap-will_paginate (= 1.0.0)
   byebug
   capybara (>= 2.15)
+  faker (= 2.11.0)
   graphql
   jbuilder (~> 2.7)
   jquery-rails
@@ -420,6 +427,7 @@ DEPENDENCIES
   tapioca
   web-console (>= 3.3.0)
   webdrivers
+  will_paginate (= 3.3.0)
 
 RUBY VERSION
    ruby 2.7.1p83

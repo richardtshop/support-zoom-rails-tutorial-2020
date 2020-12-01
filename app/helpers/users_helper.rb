@@ -1,4 +1,4 @@
-# typed: false
+
 # frozen_string_literal: true
 module UsersHelper
   def gravatar_for(user, options = { size: 80 })
