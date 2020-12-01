@@ -2,12 +2,16 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  has_many(
+    :microposts,
+    dependent: :destroy,
+  )
   before_save { email.downcase! }
 
   validates(
     :name,
     presence: true,
-    length: { maximum: 50 }
+    length: { maximum: 50 },
   )
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   validates(
@@ -22,7 +26,7 @@ class User < ApplicationRecord
     :password,
     presence: true,
     length: { minimum: 6 },
-    allow_nil: true
+    allow_nil: true,
   )
 
   def self.digest(string)
