@@ -20,9 +20,9 @@ most_recent:
   created_at: <%= Time.zone.now %>
   user: richard
 
-  <% 30.times do |n| %>
-  micropost_<%= n %>:
-    content: <%= Faker::Hipster.sentence(word_count: 5) %>
-    created_at: <%= 42.days.ago %>
-    user: richard
-  <% end %>
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Hipster.sentence(word_count: 5) %>
+  created_at: <%= 42.days.ago %>
+  user: richard
+<% end %>
