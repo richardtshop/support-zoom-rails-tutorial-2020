@@ -19,8 +19,8 @@ class UsersEditTest < ActionDispatch::IntegrationTest
       },
     })
     assert_template 'users/edit'
-    assert_select('div#error-explanation', 1) do
-      assert_select 'li', 4
+    assert_select('div#error_explanation', 1) do
+      assert_select('li', 4)
     end
   end
 
