@@ -24,3 +24,10 @@ User.create!(
     password_confirmation: password,
   )
 end
+
+# Generate microposts for a subest of users.
+users = User.all
+50.times do
+  content = Faker::Hipster.sentence(word_count: 5)
+  users.each { |user| user.microposts.create!(content: content) }
+end
