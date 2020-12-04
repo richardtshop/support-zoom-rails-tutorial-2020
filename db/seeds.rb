@@ -26,7 +26,7 @@ User.create!(
 end
 
 # Generate microposts for a subest of users.
-users = User.all
+users = User.order(:created_at).take(6)
 50.times do
   content = Faker::Hipster.sentence(word_count: 5)
   users.each { |user| user.microposts.create!(content: content) }

@@ -3,14 +3,28 @@
 
 module Types
   class QueryType < Types::BaseObject
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
+    # First describe the field signature:
+    field :microposts, [MicropostType], null: true do
+      description "Find all posts"
+      argument :limit, Int, required: false
+    end
 
-    # TODO: remove me
-    field :test_field, String, null: false,
-          description: "An example field added by the generator"
-    def test_field
-      "Hello World!"
+    # Then provide an implementation:
+    def microposts(limit:-1)
+      if limit == -1
+        Micropost.all
+      else
+        Micropost.order(:created_at).take(limit)
+      end
+    end
+
+    field :micropost, MicropostType, null: true do
+      description "Find a post by ID"
+      argument :id, ID, required: true
+    end
+
+    def micropost(id:)
+      Micropost.find(id)
     end
   end
 end

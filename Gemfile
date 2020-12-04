@@ -31,6 +31,7 @@ gem 'sewing_kit', '>= 0.127.0'
 gem 'quilt_rails', '>= 3.4.0'
 gem 'sorbet-runtime'
 gem 'graphql'
+gem 'rack-cors'
 
 # Use Bootstrap for style
 gem 'bootstrap-sass'
@@ -81,3 +82,5 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
+
+gem 'graphiql-rails', group: [:development, :test]
