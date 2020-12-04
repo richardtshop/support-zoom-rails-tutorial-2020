@@ -1,6 +1,35 @@
+"""
+An ISO 8601-encoded datetime
+"""
+scalar ISO8601DateTime
+
+type Micropost {
+  content: String
+  createdAt: ISO8601DateTime!
+  id: ID!
+  updatedAt: ISO8601DateTime!
+
+  """
+  This post's author.
+  """
+  user: User!
+  userId: Int!
+}
+
 type Query {
   """
-  An example field added by the generator
+  Find a post by ID
   """
-  testField: String!
+  micropost(id: ID!): Micropost
+
+  """
+  Find all posts
+  """
+  microposts(limit: Int): [Micropost!]
+}
+
+type User {
+  email: String!
+  id: ID!
+  name: String!
 }
