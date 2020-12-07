@@ -1,5 +1,6 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
 /* Partials */
 @import 'partials/variables';
 @import 'partials/mixins';
@@ -11,11 +12,12 @@
 @import 'partials/forms';
 @import 'partials/users';
 @import 'partials/microposts';
+@import 'partials/stats';
 
-/* universal */
+/* global styles */
 body {
   padding-top: 60px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 section {
