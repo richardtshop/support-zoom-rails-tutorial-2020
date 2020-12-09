@@ -3,13 +3,21 @@
 
 module Types
   class QueryType < Types::BaseObject
-    # First describe the field signature:
+
+    field :users, [UserType], null: true do
+      description "List all users"
+    end
+
+    def users
+      User.all
+    end
+
+
     field :microposts, [MicropostType], null: true do
       description "Find all posts"
       argument :limit, Int, required: false
     end
 
-    # Then provide an implementation:
     def microposts(limit:-1)
       if limit == -1
         Micropost.all
