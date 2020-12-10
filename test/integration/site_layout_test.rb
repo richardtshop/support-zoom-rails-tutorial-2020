@@ -22,6 +22,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
 
   test "footer date" do
     get root_path
-    assert_select('small',  /©#{Date.current.year}/)
+    assert_select('small',  /#{Date.current.year}/)
   end
 end
