@@ -19,4 +19,9 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select("a[href=?]", user_path(user))
     assert_select("a[href=?]", edit_user_path(user))
   end
+
+  test "footer date" do
+    get root_path
+    assert_select('small',  /©#{Date.current.year}/)
+  end
 end
