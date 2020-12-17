@@ -7,6 +7,7 @@ type Micropost {
   content: String
   createdAt: ISO8601DateTime!
   id: ID!
+  tag: String
   updatedAt: ISO8601DateTime!
 
   """
