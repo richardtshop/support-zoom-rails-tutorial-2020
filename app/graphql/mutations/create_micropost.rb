@@ -1,6 +1,6 @@
 module Mutations
   class CreateMicropost < BaseMutation
-    field :post, Types::MicropostType, null:false
+    field :micropost, Types::MicropostType, null:false
     field :errors, [String], null:false
 
     argument :micropost_request, Types::Requests::MicropostAttributes, required: true
@@ -9,6 +9,7 @@ module Mutations
      user = User.find(micropost_request.user_id)
      micropost = Micropost.new(
        content: micropost_request.content,
+       tag: micropost_request.tag,
      )
 
      micropost.user = user
