@@ -3,7 +3,7 @@ import {mountWithAppContext, createGraphQL, fillGraphQL} from 'tests';
 import {EmptyState} from '@shopify/polaris';
 
 import Home from '../Home';
-import HomeQuery from '../graphql/HomeQuery.graphql';
+// import HomeQuery from '../graphql/HomeQuery.graphql';
 
 describe('<Home />', () => {
   it('renders one <EmptyState/> with a footer note', async () => {
@@ -24,13 +24,16 @@ describe('<Home />', () => {
 
   it('renders one <EmptyState/> with heading text returned from Query', async () => {
     const mockTestField = 'Test Content';
-    const wrapper = await mountWithAppContext(<Home />, {
-      graphQL: createGraphQL({
-        HomeQuery: fillGraphQL(HomeQuery, {
-          testField: mockTestField,
-        }),
-      }),
-    });
+    const wrapper = await mountWithAppContext(
+      <Home />,
+      //   {
+      //   graphQL: createGraphQL({
+      //     HomeQuery: fillGraphQL(HomeQuery, {
+      //       testField: mockTestField,
+      //     }),
+      //   }),
+      // }
+    );
 
     expect(wrapper).toContainReactComponent(EmptyState, {
       heading: mockTestField,
